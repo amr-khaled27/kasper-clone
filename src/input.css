@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[effect="ripple"] {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+[effect="ripple"]:before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  transform-origin: center;
+  top: calc(var(--y) * 1px);
+  left: calc(var(--x) * 1px);
+  width: calc(var(--d) * 1px);
+  height: calc(var(--d) * 1px);
+  background: var(--ripple-background, white);
+  transform: translate(-50%, -50%) scale(var(--s, 1));
+  opacity: calc(var(--o, 1) * var(--ripple-opacity, 0.3));
+  transition: calc(var(--t, 0) * var(--ripple-duration, 300ms))
+    var(--ripple-easing, linear);
+}
+
+:root {
+  --primary: #19c8fa;
+  --myPadding: 100px;
+  --transparent: #0f748fb3;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.landing {
+  height: 100svh;
+}
+
+.paddingTopBottom {
+  padding-top: var(--myPadding);
+  padding-bottom: var(--myPadding);
+}
+
+.activeLink {
+  color: var(--primary);
+  border-bottom: 1px solid var(--primary);
+}
+
+.selected {
+  color: white;
+  background-color: var(--primary);
+}
+
+.show {
+  display: initial;
+}
+
+.enabled {
+  background-color: var(--transparent);
+  transform: scale(0.95);
+}
+
+.on {
+  left: 0;
+}
+
+.scard-animation {
+  animation: scard 1s ease forwards;
+}
+
+@keyframes scard {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.main-card-animation {
+  animation: mainCard 1s ease forwards;
+}
+
+@keyframes mainCard {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.title-animation {
+  animation: title 1s ease forwards;
+}
+
+@keyframes title {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.design-card-animation {
+  animation: design 1s ease forwards;
+}
+
+@keyframes design {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

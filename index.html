@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="ripple.css" />
+    <link rel="icon" href="./content/owl.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="input.css" />
+    <script defer src="src/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kasper</title>
+  </head>
+  <body>
+    <section class="landing bg-[url(../content/landing.jpg)] bg-cover relative">
+      <span
+        class="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-0"
+      ></span>
+
+      <header class="relative">
+        <div class="container mx-auto px-4">
+          <div
+            class="container mx-auto sm:px-4 py-10 sm:py-0 flex justify-between items-center gap-2 text-white relative after:absolute after:bg-[#a2a2a2] after:w-full after:h-[1px] after:bottom-0 after:left-0"
+          >
+            <div class="logo">
+              <img src="../content/logo.png" class="w-[124.44px]" />
+            </div>
+
+            <nav>
+              <div class="icons flex items-center gap-2 sm:gap-5">
+                <div class="links hidden sm:flex">
+                  <a
+                    href="#"
+                    class="activeLink py-10 text-sm px-2 z-10 inline-block"
+                    >Home</a
+                  >
+                  <a
+                    href="#services"
+                    class="py-10 text-sm text-white hover:text-primary transition-all duration-300 px-2 inline-block z-10 hover:border-b-[1px] border-[#fff0] hover:border-primary hover:border-solid"
+                    >Services</a
+                  >
+                  <a
+                    href="#portfolio"
+                    class="py-10 text-sm text-white hover:text-primary transition-all duration-300 px-2 inline-block z-10 hover:border-b-[1px] border-[#fff0] hover:border-primary hover:border-solid"
+                    >Portfolio</a
+                  >
+                  <a
+                    href="#about"
+                    class="py-10 text-sm text-white hover:text-primary transition-all duration-300 px-2 inline-block z-10 hover:border-b-[1px] border-[#fff0] hover:border-primary hover:border-solid"
+                    >About</a
+                  >
+                  <a
+                    href="#pricing"
+                    class="py-10 text-sm text-white hover:text-primary transition-all duration-300 px-2 inline-block z-10 hover:border-b-[1px] border-[#fff0] hover:border-primary hover:border-solid"
+                    >Pricing</a
+                  >
+                  <a
+                    href="#contact"
+                    class="py-10 text-sm text-white hover:text-primary transition-all duration-300 px-2 inline-block z-10 hover:border-b-[1px] border-[#fff0] hover:border-primary hover:border-solid"
+                    >Contact</a
+                  >
+                </div>
+
+                <div
+                  effect="ripple"
+                  class="sm:hidden menu-btn transition-colors duration-300 w-10 h-10 rounded-full flex justify-center items-center"
+                >
+                  <i class="fas fa-bars toggle-menu text-lg"></i>
+                </div>
+
+                <span
+                  class="h-[32px] w-[1px] rounded-full bg-white inline-block"
+                ></span>
+
+                <div
+                  effect="ripple"
+                  class="search transition-colors duration-300 w-10 h-10 rounded-full flex justify-center items-center"
+                >
+                  <i class="fas fa-search text-lg"></i>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <aside
+        class="w-64 h-screen z-50 bg-neutral-600 fixed top-0 -left-64 transition-all duration-300"
+      >
+        <div class="flex flex-col">
+          <div
+            class="relative flex justify-between items-center after:absolute after:w-56 after:h-[1px] after:bg-[#a7a7a7] after:transform after:bottom-0 after:left-1/2 after:-translate-x-1/2"
+          >
+            <img src="../content/logo.png" class="w-[124.44px] p-4" />
+            <div
+              effect="ripple"
+              class="close-menu w-10 h-10 flex justify-center items-center text-white text-lg rounded-full mr-4"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+
+          <a effect="ripple" href="#" class="text-white p-4 mt-4">Home</a>
+          <a effect="ripple" href="#services" class="text-white p-4"
+            >Services</a
+          >
+          <a effect="ripple" href="#portfolio" class="text-white p-4"
+            >Portfolio</a
+          >
+          <a effect="ripple" href="#about" class="text-white p-4">About</a>
+          <a effect="ripple" href="#pricing" class="text-white p-4">Pricing</a>
+          <a effect="ripple" href="#contact" class="text-white p-4">Contact</a>
+        </div>
+      </aside>
+
+      <div
+        class="content absolute transform top-[calc(50%_+_35px)] -translate-y-1/2 grid grid-cols-1 sm:grid-cols-12"
+      >
+        <div
+          class="card transform -translate-x-full relative w-full bg-bgtransparent text-white p-5 sm:p-12 sm:pl-24 sm:col-span-8 md:col-span-7"
+        >
+          <h1 class="text-[32px] mb-6 leading-[1.5]">
+            Hello World!<br />We Are Kasper We Make Art.
+          </h1>
+          <p class="text-sm">
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+            Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+        <div
+          class="arrows text-white text-sm absolute w-full hidden sm:flex justify-between px-8 top-1/2 transform -translate-y-1/2"
+        >
+          <div
+            effect="ripple"
+            class="w-10 h-10 rounded-full flex justify-center items-center"
+          >
+            <i class="fas fa-angle-left change-background fa-2x"></i>
+          </div>
+          <div
+            effect="ripple"
+            class="w-10 h-10 rounded-full flex justify-center items-center"
+          >
+            <i class="fas fa-angle-right change-background fa-2x"></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="buttons absolute bottom-0 w-full flex gap-2 justify-center text-white p-2"
+      >
+        <button
+          effect="ripple"
+          class="outline-[1px] outline-double outline-white w-5 h-5 rounded-full"
+        ></button>
+        <button
+          effect="ripple"
+          class="bg-primary w-5 h-5 rounded-full"
+        ></button>
+        <button
+          effect="ripple"
+          class="outline-[1px] outline-double outline-white w-5 h-5 rounded-full"
+        ></button>
+      </div>
+    </section>
+
+    <section id="services" class="paddingTopBottom">
+      <div class="container mx-auto p-4">
+        <div class="title flex flex-col justify-center items-center mb-16">
+          <h2
+            class="uppercase text-[40px] relative after:bg-[#333333] after:w-[135px] after:h-[2px] after:absolute after:-bottom-[25px] after:left-1/2 after:transform after:-translate-x-1/2 before:absolute before:w-[18px] before:h-[18px] before:rounded-full before:bg-white before:border-[2px] before:border-solid before:border-[#333333] before:left-1/2 before:transform before:-translate-x-1/2 before:-bottom-[33px] before:z-10"
+          >
+            services
+          </h2>
+          <p
+            class="text-text-clr my-16 mx-2 md:mx-[100px] lg:mx-[250px] xl:mx-[400px] text-center"
+          >
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+
+        <div class="scards grid grid-cols-1 gap-16 lg:grid-cols-2">
+          <div
+            class="scard flex flex-col gap-8 md:flex-row opacity-0 transition-opacity duration-1000"
+          >
+            <div class="icon text-center">
+              <i class="fa-solid fa-display fa-3x"></i>
+            </div>
+
+            <div class="scard-text text-center md:text-left">
+              <h3 class="text-primary text-lg font-bold mb-8">
+                Vorem amet intuitive
+              </h3>
+              <p class="text-text-clr">
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+          <div
+            class="scard flex flex-col gap-8 md:flex-row opacity-0 transition-opacity duration-1000"
+          >
+            <div class="icon text-center">
+              <i class="fas fa-cog fa-3x"></i>
+            </div>
+
+            <div class="scard-text text-center md:text-left">
+              <h3 class="text-primary text-lg font-bold mb-8">
+                Vorem amet intuitive
+              </h3>
+              <p class="text-text-clr">
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+          <div
+            class="scard flex flex-col gap-8 md:flex-row opacity-0 transition-opacity duration-1000"
+          >
+            <div class="icon text-center">
+              <i class="fas fa-pencil-ruler fa-3x"></i>
+            </div>
+
+            <div class="scard-text text-center md:text-left">
+              <h3 class="text-primary text-lg font-bold mb-8">
+                Vorem amet intuitive
+              </h3>
+              <p class="text-text-clr">
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+          <div
+            class="scard flex flex-col gap-8 md:flex-row opacity-0 transition-opacity duration-1000"
+          >
+            <div class="icon text-center">
+              <i class="fas fa-camera fa-3x"></i>
+            </div>
+
+            <div class="scard-text text-center md:text-left">
+              <h3 class="text-primary text-lg font-bold mb-8">
+                Vorem amet intuitive
+              </h3>
+              <p class="text-text-clr">
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                Curabitur aliquet quam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="paddingTopBottom bg-[url('../content/design.jpg')] bg-cover bg-center relative design-section overflow-hidden"
+    >
+      <span
+        class="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-0"
+      ></span>
+
+      <img
+        src="../content/mobile.png"
+        class="hidden sm:block absolute -bottom-24 left-12"
+      />
+
+      <div
+        class="content design-card grid grid-cols-1 sm:grid-cols-12 opacity-0 transform translate-x-full"
+      >
+        <div
+          class="card relative w-full bg-bgtransparent text-white p-7 sm:p-12 sm:pl-24 sm:col-start-6 sm:col-end-13 sm:col-span-7"
+        >
+          <h4 class="text-[32px] mb-12 leading-[1.5] uppercase">
+            our design comes with...
+          </h4>
+          <ul class="text-base capitalize">
+            <li class="mb-6 flex items-center">
+              <i class="fa-solid fa-display text-lg mr-4"></i> responsive design
+            </li>
+            <li class="mb-6 flex items-center">
+              <i class="fa-solid fa-display text-lg mr-4"></i> modern and clean
+              design
+            </li>
+            <li class="mb-6 flex items-center">
+              <i class="fa-solid fa-display text-lg mr-4"></i> clean code
+            </li>
+            <li class="mb-6 flex items-center">
+              <i class="fa-solid fa-display text-lg mr-4"></i> browser friendly
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="paddingTopBottom">
+      <div class="container mx-auto p-4">
+        <div class="title flex flex-col justify-center items-center mb-16">
+          <h2
+            class="uppercase text-[40px] relative after:bg-[#333333] after:w-[135px] after:h-[2px] after:absolute after:-bottom-[25px] after:left-1/2 after:transform after:-translate-x-1/2 before:absolute before:w-[18px] before:h-[18px] before:rounded-full before:bg-white before:border-[2px] before:border-solid before:border-[#333333] before:left-1/2 before:transform before:-translate-x-1/2 before:-bottom-[33px] before:z-10"
+          >
+            portfolio
+          </h2>
+          <p
+            class="text-text-clr my-16 mx-2 md:mx-[100px] lg:mx-[250px] xl:mx-[400px] text-center"
+          >
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+
+        <div
+          class="select-btns flex justify-center items-center flex-wrap gap-1"
+        >
+          <button effect="ripple" data-type="all" class="selected py-2 px-3">
+            All
+          </button>
+          <button effect="ripple" data-type="app" class="py-2 px-3">App</button>
+          <button effect="ripple" data-type="photo" class="py-2 px-3">
+            Photo
+          </button>
+          <button effect="ripple" data-type="web" class="py-2 px-3">Web</button>
+          <button effect="ripple" data-type="print" class="py-2 px-3">
+            Print
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="portfolio-images grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-1 p-1"
+      >
+        <div
+          data-type="photo"
+          class="main-item hidden relative overflow-hidden group"
+        >
+          <img
+            src="../content/shuffle-01.jpg"
+            class="w-full transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
+          />
+
+          <div
+            class="px-4 py-3 bg-white absolute transition-all duration-300 -bottom-24 group-hover:bottom-0 left-0 w-full"
+          >
+            <p class="mb-1">Awesome Image</p>
+            <p class="text-primary">Photography</p>
+          </div>
+        </div>
+
+        <div
+          data-type="web"
+          class="main-item hidden relative overflow-hidden group"
+        >
+          <img
+            src="../content/shuffle-02.jpg"
+            class="w-full transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
+          />
+
+          <div
+            class="px-4 py-3 bg-white absolute transition-all duration-300 -bottom-24 group-hover:bottom-0 left-0 w-full"
+          >
+            <p class="mb-1">Awesome Design</p>
+            <p class="text-primary">Website</p>
+          </div>
+        </div>
+
+        <div
+          data-type="app"
+          class="main-item hidden relative overflow-hidden group"
+        >
+          <img
+            src="../content/shuffle-03.jpg"
+            class="w-full transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
+          />
+
+          <div
+            class="px-4 py-3 bg-white absolute transition-all duration-300 -bottom-24 group-hover:bottom-0 left-0 w-full"
+          >
+            <p class="mb-1">Awesome Application</p>
+            <p class="text-primary">Desktop Application</p>
+          </div>
+        </div>
+
+        <div
+          data-type="photo"
+          class="main-item hidden relative overflow-hidden group"
+        >
+          <img
+            src="../content/shuffle-04.jpg"
+            class="w-full transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
+          />
+
+          <div
+            class="px-4 py-3 bg-white absolute transition-all duration-300 -bottom-24 group-hover:bottom-0 left-0 w-full"
+          >
+            <p class="mb-1">Awesome Photo</p>
+            <p class="text-primary">Photography</p>
+          </div>
+        </div>
+
+        <div
+          data-type="web"
+          class="main-item hidden relative overflow-hidden group"
+        >
+          <img
+            src="../content/shuffle-05.jpg"
+            class="w-full transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
+          />
+
+          <div
+            class="px-4 py-3 bg-white absolute transition-all duration-300 -bottom-24 group-hover:bottom-0 left-0 w-full"
+          >
+            <p class="mb-1">Awesome Design</p>
+            <p class="text-primary">Website</p>
+          </div>
+        </div>
+
+        <div
+          data-type="print"
+          class="main-item hidden relative overflow-hidden group"
+        >
+          <img
+            src="../content/shuffle-06.jpg"
+            class="w-full transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
+          />
+
+          <div
+            class="px-4 py-3 bg-white absolute transition-all duration-300 -bottom-24 group-hover:bottom-0 left-0 w-full"
+          >
+            <p class="mb-1">Awesome Printing</p>
+            <p class="text-primary">Print</p>
+          </div>
+        </div>
+
+        <div
+          data-type="print"
+          class="main-item hidden relative overflow-hidden group"
+        >
+          <img
+            src="../content/shuffle-07.jpg"
+            class="w-full transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
+          />
+
+          <div
+            class="px-4 py-3 bg-white absolute transition-all duration-300 -bottom-24 group-hover:bottom-0 left-0 w-full"
+          >
+            <p class="mb-1">Awesome Design</p>
+            <p class="text-primary">Website</p>
+          </div>
+        </div>
+
+        <div
+          data-type="photo"
+          class="main-item hidden relative overflow-hidden group"
+        >
+          <img
+            src="../content/shuffle-08.jpg"
+            class="w-full transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
+          />
+
+          <div
+            class="px-4 py-3 bg-white absolute transition-all duration-300 -bottom-24 group-hover:bottom-0 left-0 w-full"
+          >
+            <p class="mb-1">Awesome Photo</p>
+            <p class="text-primary">Photography</p>
+          </div>
+        </div>
+
+        <div
+          data-type="photo"
+          class="extra hidden relative overflow-hidden group"
+        >
+          <img
+            src="../content/shuffle-01.jpg"
+            class="w-full transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
+          />
+
+          <div
+            class="px-4 py-3 bg-white absolute transition-all duration-300 -bottom-24 group-hover:bottom-0 left-0 w-full"
+          >
+            <p class="mb-1">Awesome Image</p>
+            <p class="text-primary">Photography</p>
+          </div>
+        </div>
+
+        <div
+          data-type="web"
+          class="extra hidden relative overflow-hidden group"
+        >
+          <img
+            src="../content/shuffle-02.jpg"
+            class="w-full transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
+          />
+
+          <div
+            class="px-4 py-3 bg-white absolute transition-all duration-300 -bottom-24 group-hover:bottom-0 left-0 w-full"
+          >
+            <p class="mb-1">Awesome Design</p>
+            <p class="text-primary">Website</p>
+          </div>
+        </div>
+
+        <div
+          data-type="app"
+          class="extra hidden relative overflow-hidden group"
+        >
+          <img
+            src="../content/shuffle-03.jpg"
+            class="w-full transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
+          />
+
+          <div
+            class="px-4 py-3 bg-white absolute transition-all duration-300 -bottom-24 group-hover:bottom-0 left-0 w-full"
+          >
+            <p class="mb-1">Awesome Application</p>
+            <p class="text-primary">Desktop Application</p>
+          </div>
+        </div>
+
+        <div
+          data-type="photo"
+          class="extra hidden relative overflow-hidden group"
+        >
+          <img
+            src="../content/shuffle-04.jpg"
+            class="w-full transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
+          />
+
+          <div
+            class="px-4 py-3 bg-white absolute transition-all duration-300 -bottom-24 group-hover:bottom-0 left-0 w-full"
+          >
+            <p class="mb-1">Awesome Photo</p>
+            <p class="text-primary">Photography</p>
+          </div>
+        </div>
+
+        <div
+          data-type="web"
+          class="extra hidden relative overflow-hidden group"
+        >
+          <img
+            src="../content/shuffle-05.jpg"
+            class="w-full transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
+          />
+
+          <div
+            class="px-4 py-3 bg-white absolute transition-all duration-300 -bottom-24 group-hover:bottom-0 left-0 w-full"
+          >
+            <p class="mb-1">Awesome Design</p>
+            <p class="text-primary">Website</p>
+          </div>
+        </div>
+
+        <div
+          data-type="print"
+          class="extra hidden relative overflow-hidden group"
+        >
+          <img
+            src="../content/shuffle-06.jpg"
+            class="w-full transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
+          />
+
+          <div
+            class="px-4 py-3 bg-white absolute transition-all duration-300 -bottom-24 group-hover:bottom-0 left-0 w-full"
+          >
+            <p class="mb-1">Awesome Printing</p>
+            <p class="text-primary">Print</p>
+          </div>
+        </div>
+
+        <div
+          data-type="print"
+          class="extra hidden relative overflow-hidden group"
+        >
+          <img
+            src="../content/shuffle-07.jpg"
+            class="w-full transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
+          />
+
+          <div
+            class="px-4 py-3 bg-white absolute transition-all duration-300 -bottom-24 group-hover:bottom-0 left-0 w-full"
+          >
+            <p class="mb-1">Awesome Design</p>
+            <p class="text-primary">Website</p>
+          </div>
+        </div>
+
+        <div
+          data-type="photo"
+          class="extra hidden relative overflow-hidden group"
+        >
+          <img
+            src="../content/shuffle-08.jpg"
+            class="w-full transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"
+          />
+
+          <div
+            class="px-4 py-3 bg-white absolute transition-all duration-300 -bottom-24 group-hover:bottom-0 left-0 w-full"
+          >
+            <p class="mb-1">Awesome Photo</p>
+            <p class="text-primary">Photography</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <button
+          effect="ripple"
+          class="uppercase show-btn bg-primary text-white py-3 px-5 mt-8"
+        >
+          more
+        </button>
+      </div>
+    </section>
+
+    <section class="relative min-h-screen bg-black">
+      <video
+        autoplay
+        muted
+        loop
+        class="absolute left-0 top-0 right-0 bottom-0 w-screen h-screen object-cover opacity-40"
+      >
+        <source src="../content/awesome-video.mp4" type="video/mp4" />
+      </video>
+
+      <div class="content absolute transform top-1/2 -translate-y-1/2 w-full">
+        <div
+          class="card relative w-full bg-bgtransparent text-white p-5 sm:p-12 flex flex-col items-center gap-4"
+        >
+          <h5 class="text-2xl uppercase">super awesome video here</h5>
+          <p class="text-lg capitalize">it's all you need</p>
+          <a effect="ripple" class="capitalize bg-black px-4 py-2">see more</a>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="about"
+      class="paddingTopBottom sm:h-[650px] relative overflow-hidden"
+    >
+      <div class="title flex flex-col justify-center items-center">
+        <h2
+          class="uppercase text-[40px] relative after:bg-[#333333] after:w-[135px] after:h-[2px] after:absolute after:-bottom-[25px] after:left-1/2 after:transform after:-translate-x-1/2 before:absolute before:w-[18px] before:h-[18px] before:rounded-full before:bg-white before:border-[2px] before:border-solid before:border-[#333333] before:left-1/2 before:transform before:-translate-x-1/2 before:-bottom-[33px] before:z-10"
+        >
+          about us
+        </h2>
+        <div class="container mx-auto p-4">
+          <p
+            class="text-text-clr my-16 mx-2 md:mx-[100px] lg:mx-[250px] xl:mx-[400px] text-center"
+          >
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+      </div>
+
+      <img
+        src="../content/about.png"
+        class="absolute left-1/2 transform -translate-x-1/2 -bottom-32 hidden sm:block max-[w-96]"
+      />
+    </section>
+
+    <section
+      class="paddingTopBottom bg-[url('../content/stats.jpg')] bg-cover bg-center relative"
+    >
+      <span
+        class="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-0"
+      ></span>
+
+      <div
+        class="container px-4 mx-auto relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4"
+      >
+        <div
+          class="stats-card flex flex-col gap-8 bg-bgtransparent p-10 lg:p-12"
+        >
+          <div class="icon flex justify-center items-center">
+            <div
+              class="w-10 h-10 flex justify-center items-center rounded-full bg-black text-white"
+            >
+              <i class="fas fa-mug-hot"></i>
+            </div>
+          </div>
+
+          <div class="text-center text-white flex flex-col gap-4">
+            <h6 class="text-6xl md:text-4xl lg:text-6xl font-semibold">
+              1.236
+            </h6>
+            <p class="capitalize">coffe drinks</p>
+          </div>
+        </div>
+        <div
+          class="stats-card flex flex-col gap-8 bg-bgtransparent p-10 lg:p-12"
+        >
+          <div class="icon flex justify-center items-center">
+            <div
+              class="w-10 h-10 flex justify-center items-center rounded-full bg-black text-white"
+            >
+              <i class="fa-regular fa-folder"></i>
+            </div>
+          </div>
+
+          <div class="text-center text-white flex flex-col gap-4">
+            <h6 class="text-6xl md:text-4xl lg:text-6xl font-semibold">256</h6>
+            <p class="capitalize">completed projects</p>
+          </div>
+        </div>
+        <div
+          class="stats-card flex flex-col gap-8 bg-bgtransparent p-10 lg:p-12"
+        >
+          <div class="icon flex justify-center items-center">
+            <div
+              class="w-10 h-10 flex justify-center items-center rounded-full bg-black text-white"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+          </div>
+
+          <div class="text-center text-white flex flex-col gap-4">
+            <h6 class="text-6xl md:text-4xl lg:text-6xl font-semibold">
+              1,743
+            </h6>
+            <p class="capitalize">mail sent</p>
+          </div>
+        </div>
+        <div
+          class="stats-card flex flex-col gap-8 bg-bgtransparent p-10 lg:p-12"
+        >
+          <div class="icon flex justify-center items-center">
+            <div
+              class="w-10 h-10 flex justify-center items-center rounded-full bg-black text-white"
+            >
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+          </div>
+
+          <div class="text-center text-white flex flex-col gap-4">
+            <h6 class="text-6xl md:text-4xl lg:text-6xl font-semibold">17</h6>
+            <p class="capitalize">awards received</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="paddingTopBottom">
+      <div class="container mx-auto p-4 grid grid-cols-1 lg:grid-cols-2 gap-20">
+        <div class="testmonials">
+          <div class="mini-title text-center">
+            <div class="uppercase text-xl mb-6">testmonials</div>
+            <p class="text-text-clr sm:mx-16">
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+              Mauris blandit aliquet elit, eget tincidunt.
+            </p>
+          </div>
+
+          <div class="tcards sm:px-6 mt-20 flex flex-col gap-10">
+            <div class="tcard flex flex-col items-center gap-12 md:flex-row">
+              <div class="t-image">
+                <img
+                  src="../content/skills-01.jpg"
+                  class="rounded-full w-32 sm:w-full"
+                />
+              </div>
+
+              <div class="tcard-text text-center md:text-left">
+                <p>
+                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                  sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar
+                  a. Curabitur aliquet quam.
+                </p>
+                <p
+                  class="text-end text-text-clr text-sm py-4 relative after:absolute after:bg-[#a2a2a2] after:w-full after:h-[1px] after:bottom-0 after:left-0"
+                >
+                  John Doe, CEO
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="tcard flex flex-col items-center gap-12 md:flex-row relative"
+            >
+              <div class="t-image">
+                <img
+                  src="../content/skills-02.jpg"
+                  class="rounded-full w-32 sm:w-full"
+                />
+              </div>
+
+              <div class="tcard-text text-center md:text-left">
+                <p>
+                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at
+                  sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar
+                  a. Curabitur aliquet quam.
+                </p>
+                <p
+                  class="text-end text-text-clr text-sm py-4 relative after:absolute after:bg-[#a2a2a2] after:w-full after:h-[1px] after:bottom-0 after:left-0"
+                >
+                  John Doe, CEO
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="t-buttons w-full flex gap-2 justify-center text-white p-2"
+            >
+              <button
+                effect="ripple"
+                class="outline-[1px] outline-double outline-[#a2a2a2] w-3 h-3 rounded-full"
+              ></button>
+              <button
+                effect="ripple"
+                class="bg-primary w-3 h-3 rounded-full"
+              ></button>
+              <button
+                effect="ripple"
+                class="outline-[1px] outline-double outline-[#a2a2a2] w-3 h-3 rounded-full"
+              ></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills">
+          <div class="mini-title text-center">
+            <div class="uppercase text-xl mb-6">skills</div>
+            <p class="text-text-clr sm:mx-16">
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+              Mauris blandit aliquet elit, eget tincidunt.
+            </p>
+          </div>
+
+          <div class="skill-bars mt-20">
+            <ul class="flex flex-col gap-8">
+              <li>
+                <p class="uppercase mb-4">adobe</p>
+                <div class="bar w-full h-8 bg-[#d8d8d8]">
+                  <div
+                    data-width="90%"
+                    class="percent w-0 h-full transition-[width] duration-1000 ease-in-out bg-primary relative"
+                  >
+                    <span
+                      class="absolute opacity-0 transition-opacity duration-1000 ease-in-out delay-1000 text-white bg-black w-10 h-7 flex justify-center items-center rounded-md top-[calc(-100%_-_15px)] -right-5 after:absolute after:border-[5px] after:border-transparent after:border-t-black after:left-1/2 after:transform after:-translate-x-1/2 after:-bottom-[10px]"
+                      >90%</span
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <p class="uppercase mb-4">html and css</p>
+                <div class="bar w-full h-8 bg-[#d8d8d8]">
+                  <div
+                    data-width="85%"
+                    class="percent w-0 h-full transition-[width] duration-1000 ease-in-out bg-primary relative"
+                  >
+                    <span
+                      class="absolute opacity-0 transition-opacity duration-1000 ease-in-out delay-1000 text-white bg-black w-10 h-7 flex justify-center items-center rounded-md top-[calc(-100%_-_15px)] -right-5 after:absolute after:border-[5px] after:border-transparent after:border-t-black after:left-1/2 after:transform after:-translate-x-1/2 after:-bottom-[10px]"
+                      >85%</span
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <p class="uppercase mb-4">javascript</p>
+                <div class="bar w-full h-8 bg-[#d8d8d8]">
+                  <div
+                    data-width="80%"
+                    class="percent w-0 h-full transition-[width] duration-1000 ease-in-out bg-primary relative"
+                  >
+                    <span
+                      class="absolute opacity-0 transition-opacity duration-1000 ease-in-out delay-1000 text-white bg-black w-10 h-7 flex justify-center items-center rounded-md top-[calc(-100%_-_15px)] -right-5 after:absolute after:border-[5px] after:border-transparent after:border-t-black after:left-1/2 after:transform after:-translate-x-1/2 after:-bottom-[10px]"
+                      >80%</span
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <p class="uppercase mb-4">php</p>
+                <div class="bar w-full h-8 bg-[#d8d8d8]">
+                  <div
+                    data-width="90%"
+                    class="percent w-0 h-full transition-[width] duration-1000 ease-in-out bg-primary relative"
+                  >
+                    <span
+                      class="absolute opacity-0 transition-opacity duration-1000 ease-in-out delay-1000 text-white bg-black w-10 h-7 flex justify-center items-center rounded-md top-[calc(-100%_-_15px)] -right-5 after:absolute after:border-[5px] after:border-transparent after:border-t-black after:left-1/2 after:transform after:-translate-x-1/2 after:-bottom-[10px]"
+                      >90%</span
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="paddingTopBottom bg-[url('../content/quote.jpg')] bg-cover bg-center relative"
+    >
+      <span
+        class="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-0"
+      ></span>
+
+      <div
+        class="container mx-auto px-4 sm:px-20 relative text-white text-center"
+      >
+        <p class="text-3xl mb-8">
+          "accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet
+          elit, eget tincidunt."
+        </p>
+        <p>John Doe</p>
+      </div>
+    </section>
+
+    <section id="pricing" class="paddingTopBottom">
+      <div class="container mx-auto p-4">
+        <div class="title flex flex-col justify-center items-center mb-16">
+          <h2
+            class="uppercase text-[40px] relative after:bg-[#333333] after:w-[135px] after:h-[2px] after:absolute after:-bottom-[25px] after:left-1/2 after:transform after:-translate-x-1/2 before:absolute before:w-[18px] before:h-[18px] before:rounded-full before:bg-white before:border-[2px] before:border-solid before:border-[#333333] before:left-1/2 before:transform before:-translate-x-1/2 before:-bottom-[33px] before:z-10"
+          >
+            pricing
+          </h2>
+          <p
+            class="text-text-clr my-16 mx-2 md:mx-[100px] lg:mx-[250px] xl:mx-[400px] text-center"
+          >
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4"
+        >
+          <div class="price-card">
+            <div
+              class="price flex flex-col gap-4 py-10 border-y-[1px] border-primary border-solid"
+            >
+              <p class="uppercase text-xl text-center">basic</p>
+              <p class="text-lg font-bold text-center mb-4">
+                <span class="text-6xl font-bold px-4 relative"
+                  >19<span class="absolute top-0 -left-4 text-3xl font-normal"
+                    >$</span
+                  ></span
+                >/Mo
+              </p>
+            </div>
+
+            <ul class="flex flex-col items-center">
+              <li
+                class="capitalize p-4 border-b-[1px] border-primary border-solid"
+              >
+                feature no 1
+              </li>
+              <li
+                class="capitalize p-4 border-b-[1px] border-primary border-solid"
+              >
+                extra feature 1
+              </li>
+              <li
+                class="capitalize p-4 border-b-[1px] border-primary border-solid"
+              >
+                extra feature 2
+              </li>
+              <li class="capitalize p-4">feature</li>
+            </ul>
+
+            <div
+              class="flex justify-center items-center py-10 border-y-[1px] border-primary border-solid"
+            >
+              <a
+                effect="ripple"
+                class="capitalize p-4 border border-primary border-solid text-[#551a8b]"
+                >buy now</a
+              >
+            </div>
+          </div>
+          <div class="price-card">
+            <div
+              class="price flex flex-col gap-4 py-10 border-y-[1px] border-primary border-solid"
+            >
+              <p class="uppercase text-xl text-center">basic</p>
+              <p class="text-lg font-bold text-center mb-4">
+                <span class="text-6xl font-bold px-4 relative"
+                  >19<span class="absolute top-0 -left-4 text-3xl font-normal"
+                    >$</span
+                  ></span
+                >/Mo
+              </p>
+            </div>
+
+            <ul class="flex flex-col items-center">
+              <li
+                class="capitalize p-4 border-b-[1px] border-primary border-solid"
+              >
+                feature no 1
+              </li>
+              <li
+                class="capitalize p-4 border-b-[1px] border-primary border-solid"
+              >
+                extra feature 1
+              </li>
+              <li
+                class="capitalize p-4 border-b-[1px] border-primary border-solid"
+              >
+                extra feature 2
+              </li>
+              <li class="capitalize p-4">feature</li>
+            </ul>
+
+            <div
+              class="flex justify-center items-center py-10 border-y-[1px] border-primary border-solid"
+            >
+              <a
+                effect="ripple"
+                class="capitalize p-4 border border-primary border-solid text-[#551a8b]"
+                >buy now</a
+              >
+            </div>
+          </div>
+          <div class="price-card">
+            <div
+              class="price flex flex-col gap-4 py-10 lg:border-y-[1px] border-primary border-solid"
+            >
+              <p class="uppercase text-xl text-center">basic</p>
+              <p class="text-lg font-bold text-center mb-4">
+                <span class="text-6xl font-bold px-4 relative"
+                  >19<span class="absolute top-0 -left-4 text-3xl font-normal"
+                    >$</span
+                  ></span
+                >/Mo
+              </p>
+            </div>
+
+            <ul class="flex flex-col items-center">
+              <li
+                class="capitalize p-4 border-b-[1px] border-primary border-solid"
+              >
+                feature no 1
+              </li>
+              <li
+                class="capitalize p-4 border-b-[1px] border-primary border-solid"
+              >
+                extra feature 1
+              </li>
+              <li
+                class="capitalize p-4 border-b-[1px] border-primary border-solid"
+              >
+                extra feature 2
+              </li>
+              <li class="capitalize p-4">feature</li>
+            </ul>
+
+            <div
+              class="flex justify-center items-center py-10 border-y-[1px] border-primary border-solid"
+            >
+              <a
+                effect="ripple"
+                class="capitalize p-4 border border-primary border-solid text-[#551a8b]"
+                >buy now</a
+              >
+            </div>
+          </div>
+          <div class="price-card">
+            <div
+              class="price flex flex-col gap-4 py-10 xl:border-y-[1px] border-primary border-solid"
+            >
+              <p class="uppercase text-xl text-center">basic</p>
+              <p class="text-lg font-bold text-center mb-4">
+                <span class="text-6xl font-bold px-4 relative"
+                  >19<span class="absolute top-0 -left-4 text-3xl font-normal"
+                    >$</span
+                  ></span
+                >/Mo
+              </p>
+            </div>
+
+            <ul class="flex flex-col items-center">
+              <li
+                class="capitalize p-4 border-b-[1px] border-primary border-solid"
+              >
+                feature no 1
+              </li>
+              <li
+                class="capitalize p-4 border-b-[1px] border-primary border-solid"
+              >
+                extra feature 1
+              </li>
+              <li
+                class="capitalize p-4 border-b-[1px] border-primary border-solid"
+              >
+                extra feature 2
+              </li>
+              <li class="capitalize p-4">feature</li>
+            </ul>
+
+            <div
+              class="flex justify-center items-center py-10 border-y-[1px] border-primary border-solid"
+            >
+              <a
+                effect="ripple"
+                class="capitalize p-4 border border-primary border-solid text-[#551a8b]"
+                >buy now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-20 px-4 flex flex-col items-center gap-4">
+          <p class="text-xl text-center">
+            Contact us if you have special request
+          </p>
+          <a
+            effect="ripple"
+            href="#contact"
+            class="capitalize text-white bg-primary px-7 py-3"
+            >contact us</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="paddingTopBottom bg-[url('../content/subscribe.jpg')] bg-cover bg-center relative"
+    >
+      <span
+        class="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-0"
+      ></span>
+
+      <div class="container mx-auto p-4">
+        <div class="relative flex flex-col lg:flex-row gap-8 items-center">
+          <div
+            class="w-full lg:w-2/5 border border-white border-solid flex justify-between mx-4 items-center"
+          >
+            <label><i class="fa-solid fa-envelope text-white px-4"></i></label
+            ><input
+              type="text"
+              placeholder="Your Email"
+              class="bg-transparent outline-none border-none text-white w-0 py-4 grow"
+            />
+
+            <button
+              effect="ripple"
+              type="submit"
+              class="subscribe uppercase text-white bg-primary p-4"
+            >
+              subscribe
+            </button>
+          </div>
+
+          <p class="text-white">
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blan dit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="paddingTopBottom">
+      <div class="title flex flex-col justify-center items-center mb-16">
+        <h2
+          class="uppercase text-[40px] relative after:bg-[#333333] after:w-[135px] after:h-[2px] after:absolute after:-bottom-[25px] after:left-1/2 after:transform after:-translate-x-1/2 before:absolute before:w-[18px] before:h-[18px] before:rounded-full before:bg-white before:border-[2px] before:border-solid before:border-[#333333] before:left-1/2 before:transform before:-translate-x-1/2 before:-bottom-[33px] before:z-10"
+        >
+          contact us
+        </h2>
+        <div class="container mx-auto p-4">
+          <p
+            class="text-text-clr my-16 mx-2 md:mx-[100px] lg:mx-[250px] xl:mx-[400px] text-center"
+          >
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Mauris blandit aliquet elit, eget tincidunt.
+          </p>
+        </div>
+      </div>
+
+      <div class="container mx-auto p-4">
+        <div class="contact-msg flex flex-col-reverse md:flex-row gap-16">
+          <div class="w-full md:w-4/6 flex flex-col gap-4">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="w-full outline-none border border-[#d8d8d8] p-4"
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="w-full outline-none border border-[#d8d8d8] p-4"
+            />
+            <textarea
+              placeholder="Your Message"
+              class="w-full outline-none border border-[#d8d8d8] p-4 h-60"
+            ></textarea>
+            <div class="flex justify-end">
+              <button
+                effect="ripple"
+                type="button"
+                class="uppercase text-white bg-primary p-4"
+              >
+                send message
+              </button>
+            </div>
+          </div>
+
+          <div class="w-full md:w-2/6 flex flex-col gap-16">
+            <div class="text-center md:text-left mb-8 md:mb-0">
+              <p class="text-lg uppercase mb-4">get in touch</p>
+              <p class="text-text-clr mb-2">+00 123.456.789</p>
+              <p class="text-text-clr">+00 123.456.789</p>
+            </div>
+
+            <div class="flex flex-col items-center md:items-start gap-2">
+              <p class="text-lg uppercase mb-2">where are we</p>
+              <p class="text-text-clr capitalize">awesome address 17</p>
+              <p class="text-text-clr capitalize">new york, nyc</p>
+              <p class="text-text-clr">123-456-789</p>
+              <p class="text-text-clr capitalize">usa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="py-14 bg-[url('../content/subscribe.jpg')] bg-cover bg-center relative"
+    >
+      <span class="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-0">
+      </span>
+
+      <div class="container mx-auto p-4 relative">
+        <div class="logo flex justify-center mb-12">
+          <img src="../content/logo.png" />
+        </div>
+
+        <div class="flex flex-col items-center gap-12">
+          <div>
+            <p
+              class="uppercase w-fit text-white text-[22px] p-4 relative after:absolute after:w-full after:h-[1px] after:left-0 after:bottom-0 after:bg-white"
+            >
+              we are social
+            </p>
+
+            <div class="flex justify-center mt-4 gap-8 text-white">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-solid fa-house"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <p class="capitalize text-white">
+            © 2021 <span class="text-primary">Kasper</span> All Right Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" class="bg-bgc1 block select-none hover:bg-primary transition-colors duration-300 ease-in-out ">
+      <div class="container mx-auto w-full h-10 flex justify-center items-center">
+        <p class="text-textclr1 capitalize">made with <i class="fa-solid fa-heart text-blue-500"></i> by eng.Amr Khaled</p>
+      </div>
+    </a>
+  </body>
+</html>

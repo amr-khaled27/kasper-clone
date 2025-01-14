@@ -1,0 +1,21 @@
+# Node modules
+node_modules/
+
+# Log files
+*.log
+
+# env
+.env
+
+# Build directories
+build/
+dist/
+chats/
+
+# macOS system files
+.DS_Store
+
+# Other
+*.pdf
+response.md
+test.js
